@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Resetear Contraseña</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../../external/static/css/my-login.css">
+	<!--FontIcon-->
+  <script src="https://kit.fontawesome.com/aed56cebe5.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="my-login-page">
+<!--Navbar-->
+
+  <ul class="nav justify-content-center ,navbar navbar-expand-lg navbar-light bg-dark">
+
+    <li class="nav-item">
+        <a class="nav-link active , navbar-brand text-white" href="../../external/templates/index.html">Inicio&nbsp;<i
+                class="fas fa-home"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active , navbar-brand text-white" href="../../external/templates/servicios.html">Servicios</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="../../external/templates/diagnostic.html">Diágnostico</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="../../external/templates/contacto.hmtl">Contacto</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="../../external/templates/about.html">¿Quienes somos?</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link , navbar-brand text-white" href="../../external/templates/Login.html">Login</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link , navbar-brand text-white" href="../../external/templates/Registro.html">Registrarse</a>
+    </li>
+</ul>
+	<!--Formulario Recuperación-->
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center align-items-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="../../external/static/img/kata.png" alt="bootstrap 4 login page">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Forgot Password</h4>
+							<form method="POST" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									<label for="email">Correo Eléctronico</label>
+									<input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+									<div class="invalid-feedback">
+										Email invalido
+									</div>
+									<div class="form-text text-muted">
+										Pulsando Resetear Contraseña se enviará un enlace pra restablecer su contraseña
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Reset Password
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="../../external/static/js/my-login.js"></script>
+
+				<!--Footer-->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Katalepsis 2021</p>
+    </div>
+  </footer>
+</body>
+</html>

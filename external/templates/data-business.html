@@ -1,0 +1,59 @@
+<fieldset>
+
+    <h4>Datos Empresariales: <span>Step 1 - 4</span></h4>
+
+    <!-- Campo Nombre Empresa -->
+    <div class="form-group">
+        {{ render_field(form.nameCompany, class='form-control required') }}
+    </div>
+
+    <!-- Campo Colaboradores -->
+    <div class="form-group">
+        {{ render_field(form.collaborators) }}
+    </div>
+
+    <!-- Campo Sector Empresarial -->
+    <div class="form-group">
+        {{ render_field(form.bussinessSector, class='form-control required') }}
+    </div>
+
+    <!-- Campo Contacto Directo -->
+    <div class="form-group">
+        {{ render_field(form.directContact, class='form-control required') }}
+    </div>
+
+    <!-- Campo Correo Electrónico -->
+    <div class="form-group">
+        {{ render_field(form.email, class='form-control required') }}
+    </div>
+
+    <!-- Campo Certificaciones -->
+    <div class="form-group">
+        {{ render_field(form.hasCertificates) }}
+    </div>
+
+    <!-- Campo Respuesta Certificaciones -->
+    <div class="form-group">
+        <label class="control-label">Escriba sus certificaciones</label>
+        <input id="certifica" maxlength="100" type="text" class="form-control"
+               placeholder="ISO 9001" disabled required pattern="[A-Za-z0-9]+">
+    </div>
+
+    <!-- Radio Buttons Conoce la NOM 0-35-->
+    <div class="form-group">
+        {{ render_field(form.knownNom035) }}
+    </div>
+
+    <!-- Campo Fecha -->
+    <div class="form-group">
+        <label for="start">Seleccione la fecha de su última actualización:</label>
+        <input type="date" id="NOM" name="trip-start"
+               value="2020-11-30"
+               min="2010-01-01" max="2040-12-31" disabled>
+    </div>
+
+    <!--Boton Siguiente-->
+    <div class="form-wizard-buttons">
+        <button type="button" class="btn btn-next">Siguiente</button>
+    </div>
+</fieldset>

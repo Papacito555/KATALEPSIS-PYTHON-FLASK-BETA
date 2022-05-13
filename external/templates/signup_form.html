@@ -1,0 +1,107 @@
+{% extends "base_registro.html" %}
+
+{% block title %}Registro de usuarios{% endblock %}
+
+{% block content %}
+    	<section>
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="../../external/static/img/kata.png" alt="bootstrap 4 login page">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Registro</h4>
+							<form method="POST" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									{{ form.name(placeholder="name") }}
+									<div class="invalid-feedback">
+									{% if form.name.errors %}
+        							{% for error in form.name.errors %}
+          							{{ error }}
+        							{% endfor %}
+									{% endif %}
+									</div>
+									</div>
+								</div>
+
+									<div class="form-group">
+									{{ form.job(placeholder="job") }}
+									<div class="invalid-feedback">
+									{% if form.job.errors %}
+        							{% for error in form.job.errors %}
+          							{{ error }}
+        							{% endfor %}
+									{% endif %}
+									</div>
+								</div>
+
+								<div class="form-group">
+									{{ form.enterprise(placeholder="enterprise") }}
+									<div class="invalid-feedback">
+									{% if form.enterprise.errors %}
+        							{% for error in form.enterprise.errors %}
+          							{{ error }}
+        							{% endfor %}
+									{% endif %}
+									</div>
+								</div>
+
+								<div class="form-group">
+									{{ form.email(placeholder="tuemail@example.com") }}
+									<div class="invalid-feedback">
+										{% if form.email.errors %}
+        								{% for error in form.email.errors %}
+          								{{ error }}
+        								{% endfor %}
+										{% endif %}
+									</div>
+								</div>
+
+								<div class="form-group">
+									{{ form.password(placeholder="password") }}
+									<div class="invalid-feedback">
+										{% if form.password.errors %}
+        								{% for error in form.password.errors %}
+										{{ error }}
+        								{% endfor %}
+										{% endif %}
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input type="file" id="foto_x" name="foto_x" required><br></br>
+									<div class="invalid-feedback">
+										Es requerida una fotografia con un peso no mayor a 2 MB
+									</div>
+								</div>
+
+								<div class="g-recaptcha" data-sitekey="6LdFkhgaAAAAAFqIf0a1CiraLgoO4JwkbeDa98g2"></div>
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="agree" id="agree" class="custom-control-input" required="">
+										<label for="agree" class="custom-control-label">Acepto los <a href="#">Terminos y condiciones</a></label>
+										<div class="invalid-feedback">
+											Debes de aceptar nuestros terminos y condiciones
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Registrar
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									¿Ya posee una cuenta? <a href="Login.html">Login</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+{% endblock %}

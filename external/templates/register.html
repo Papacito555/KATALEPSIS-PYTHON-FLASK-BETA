@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Registro</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../../external/static/css/my-login.css">
+	<!-- CAPTCHA-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!--FontIcon-->
+  <script src="https://kit.fontawesome.com/aed56cebe5.js" crossorigin="anonymous"></script>
+</head>
+<body class="my-login-page">
+<!--Navbar-->
+<ul class="nav justify-content-center ,navbar navbar-expand-lg navbar-light bg-dark">
+
+    <li class="nav-item">
+        <a class="nav-link active , navbar-brand text-white" href="../../external/templates/index.html">Inicio&nbsp;<i
+                class="fas fa-home"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active , navbar-brand text-white" href="../../external/templates/servicios.html">Servicios</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="../../external/templates/diagnostic.html">Diágnostico</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="../../external/templates/contacto.hmtl">Contacto</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="../../external/templates/about.html">¿Quienes somos?</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link , navbar-brand text-white" href="../../external/templates/Login.html">Login</a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link , navbar-brand text-white" href="../../external/templates/Registro.html">Registrarse</a>
+    </li>
+</ul>
+	<!--Formulario Registro-->
+	<section>
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					<div class="brand">
+						<img src="../../external/static/img/kata.png" alt="bootstrap 4 login page">
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">Registro</h4>
+							<form method="POST" class="my-login-validation" novalidate="">
+								<div class="form-group">
+									<label for="name">Nombre</label>
+									<input id="name" type="text" class="form-control" name="name" required autofocus>
+									<div class="invalid-feedback">
+										¿Cuál es tu nombre?
+									</div>
+								</div>
+
+									<div class="form-group">
+									<label for="name">Puesto</label>
+									<input id="name" type="text" class="form-control" name="name" required autofocus>
+									<div class="invalid-feedback">
+										¿Qué puesto ocupa?
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="name">Empresa</label>
+									<input id="name" type="text" class="form-control" name="name" required autofocus>
+									<div class="invalid-feedback">
+										¿A qué empresa pertenece?
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="email">E-Mail</label>
+									<input id="email" type="email" class="form-control" name="email" required>
+									<div class="invalid-feedback">
+										Your email is invalid
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input id="password" type="password" class="form-control" name="password" required data-eye>
+									<div class="invalid-feedback">
+										Password is required
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input type="file" id="foto_x" name="foto_x" required><br></br>
+									<div class="invalid-feedback">
+										Es requerida una fotografia con un peso no mayor a 2 MB
+									</div>
+								</div>
+
+								<div class="g-recaptcha" data-sitekey="6LdFkhgaAAAAAFqIf0a1CiraLgoO4JwkbeDa98g2"></div>
+								<div class="form-group">
+									<div class="custom-checkbox custom-control">
+										<input type="checkbox" name="agree" id="agree" class="custom-control-input" required="">
+										<label for="agree" class="custom-control-label">Acepto los <a href="#">Terminos y condiciones</a></label>
+										<div class="invalid-feedback">
+											Debes de aceptar nuestros terminos y condiciones
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block">
+										Registrar
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									¿Ya posee una cuenta? <a href="Login.html">Login</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Katalepsis 2021</p>
+    </div>
+  </footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="../../external/static/js/my-login.js"></script>
+</body>
+</html>

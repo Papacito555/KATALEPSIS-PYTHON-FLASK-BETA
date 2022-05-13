@@ -1,0 +1,96 @@
+﻿<fieldset>
+    <h4>Diagnostico NOM 0-35 <span>Step 4 - 4</span></h4>
+
+  <!--Primer Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.knowledgeNom035) }}
+    </div>
+
+
+  <!--Segunda pregunta-->
+    <div class="form-group">
+      {{ render_field(form.requerimentsStp) }}
+    </div>
+
+  <!--Tercer Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.ftpsField) }}
+    </div>
+
+  <!--Cuarta Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.eofField) }}
+    </div>
+
+  <!--Quinta Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.implementField) }}
+    </div>
+
+  <!--Sexta Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.recomendationsField) }}
+    </div>
+
+  <!--Septima Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.atsField ) }}
+    </div>
+
+  <!--Octava Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.securityField) }}
+    </div>
+
+  <!--Novena Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.frpsField) }}
+    </div>
+
+  <!--Decima Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.reportField) }}
+    </div>
+
+  <!--Onceava Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.perdiodField) }}
+    </div>
+
+  <!--Doceava Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.analysisField) }}
+    </div>
+
+  <!--Treceava Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.psycologyField) }}
+    </div>
+
+  <!--Catorceava Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.surveyField) }}
+    </div>
+
+  <!--Quinceava Pregunta-->
+    <div class="form-group">
+      {{ render_field(form.controlField) }}
+    </div>
+
+  <!--Final estilo Parrafo-->
+
+  <!--Checkbox Verificación-->
+    <div class="form-group">
+      <input  type="checkbox" value="Check1" id="Check1">
+      <label > Acepto los terminos y Condiciones</label>
+    </div>
+
+  <!-- Botones Anterior y Enviar-->
+    <div class="form-wizard-buttons">
+      <button type="button" class="btn btn-previous">Previous</button>
+      {{form.submit()}}
+<!--      <button class="btn btn-primary" type="submit"></button> -->
+    </div>
+
+  <!-- Form 4 end-->
+</fieldset>

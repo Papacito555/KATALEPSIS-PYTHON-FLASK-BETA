@@ -1,0 +1,114 @@
+﻿{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }}
+Formulario Katalepsis
+{% endblock %}
+
+{% block content %}
+<ul class="nav justify-content-center ,navbar navbar-expand-lg navbar-light bg-dark">
+
+    <li class="nav-item">
+        <a class="nav-link active , navbar-brand text-white" href="index.html">Inicio&nbsp;<i
+                class="fas fa-home"></i></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active , navbar-brand text-white" href="servicios.html">Servicios</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="Formulario.html">Diágnostico</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="contacto.hmtl">Contacto</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link , navbar-brand text-white" href="about.html">¿Quienes somos?</a>
+    </li>
+</ul>
+<!--Inicio Stepper-->
+<section class="form-box">
+    <div class="container">
+        <!--Tamaño del Stepper-->
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-wizard">
+
+                <!-- Formulario Katalepsis-->
+
+                <form action={{url_for('home_page.diagnostic')}} method="POST">
+                    {{ form.csrf_token }}
+                    <h3>Bienvenido Visitante</h3>
+                    <p>Llena todos los campos para continuar</p>
+
+                    <!-- Form progress -->
+                    <div class="form-wizard-steps form-wizard-tolal-steps-4">
+                        <div class="form-wizard-progress">
+                            <div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="4"
+                                 style="width: 12.25%;"></div>
+                        </div>
+                        <!-- Step 1 -->
+                        <div class="form-wizard-step active">
+                            <div class="form-wizard-step-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                            <p>Empresa</p>
+                        </div>
+                        <!-- Step 1 -->
+
+                        <!-- Step 2 -->
+                        <div class="form-wizard-step">
+                            <div class="form-wizard-step-icon"><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                            </div>
+                            <p>Personal</p>
+                        </div>
+                        <!-- Step 2 -->
+
+                        <!-- Step 3 -->
+                        <div class="form-wizard-step">
+                            <div class="form-wizard-step-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                            <p>Laboral</p>
+                        </div>
+                        <!-- Step 3 -->
+
+                        <!-- Step 4 -->
+                        <div class="form-wizard-step">
+                            <div class="form-wizard-step-icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+                            <p>Términos</p>
+                        </div>
+                        <!-- Step 4 -->
+                    </div>
+                    <!-- Form progress -->
+
+                    <!-- Form Step 1 -->
+                    {% block databusiness %}
+                    {% include 'data-business.html' %}
+                    {% endblock %}
+                    <!-- Formulario 1 Termina Aquí -->
+
+                    <!-- Formulario 2 Empieza Aquí -->
+                    {% block datacollaborator %}
+                    {% include 'data-collaborator.html' %}
+                    {% endblock %}
+                    <!-- Fin de Formulario 2 -->
+
+                    <!-- Inicio Formulario 3 -->
+                    {% block datawork %}
+                    {% include 'data-work.html' %}
+                    {% endblock %}
+                    <!-- Final tercer formulario -->
+
+                    <!--Inicio Formulario 4 -->
+                    {%block diagnosticquest %}
+                    {% include 'diagnostic-quest.html' %}
+                    {% endblock %}
+                    <!-- Form 4 end-->
+
+                    <!-- Form end-->
+                </form>
+
+                <!-- Cuadro Stepper fin-->
+            </div>
+
+        </div>
+        <!-- Div class Row fin-->
+    </div>
+    <!-- Container Fin -->
+</section>
+{% endblock %}

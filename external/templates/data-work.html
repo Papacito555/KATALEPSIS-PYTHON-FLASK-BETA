@@ -1,0 +1,70 @@
+<fieldset>
+
+    <h4>Datos Laborales: <span>Step 3 - 4</span></h4>
+
+    <!-- Campo Profesión -->
+    <div class="form-group">
+        {{ render_field(form.profession, class='form-control required') }}
+    </div>
+
+    <!-- Campo Departamento -->
+    <div class="form-group">
+       {{ render_field(form.department, class='form-control required') }}
+    </div>
+
+    <!-- Lista Tipo de Puesto -->
+    <div class="form-group">
+      {{ render_field(form.workstation, class='form-control required') }}
+    </div>
+
+    <!-- Lista Tipo de Contrato -->
+    <div class="form-group">
+      {{ render_field(form.contractType, class='form-control required') }}
+    </div>
+
+    <!-- Lista Tipo de Personal -->
+    <div class="form-group">
+      {{ render_field(form.personalType, class='form-control required') }}
+    </div>
+
+    <!-- Campo Condicional Otros (Especificar) -->
+    <div class="form-group">
+      {{ render_field(form.especificarPersonal, class='form-control required') }}
+    </div>
+
+    <!-- Lista Tipo de Jornada Laboral-->
+    <div class="form-group">
+      {{ render_field(form.laboralJourney, class='form-control required') }}
+    </div>
+
+    <!-- Campo Condicional Otros (Especificar) -->
+    <div class="form-group">
+      {{ render_field(form.specificJourney, class='form-control required') }}
+    </div>
+
+    <!--Lista rotación de turnos -->
+    <div class="form-group">
+      {{ render_field(form.shiftRotation, class='form-control required') }}
+    </div>
+
+    <!-- Campo Experiencia Laboral -->
+    <div class="form-group">
+        {{ render_field(form.experience, class='form-control required') }}
+    </div>
+
+    <!-- Lista Tiempo en Puesto Actual -->
+    <div class="form-group">
+        {{ render_field(form.currentPosition, class='form-control required') }}
+    </div>
+
+    <!-- Lista  Tiempo Experiencia Laboral -->
+    <div class="form-group">
+        {{ render_field(form.laboralExperience, class='form-control required') }}
+    </div>
+
+    <!-- Botones Aterior y Siguiente -->
+    <div class="form-wizard-buttons">
+        <button type="button" class="btn btn-previous">Anterior</button>
+        <button type="button" class="btn btn-next">Siguiente</button>
+    </div>
+</fieldset>
